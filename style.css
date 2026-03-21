@@ -92,3 +92,26 @@ body {
 .wa-float:hover {
   transform: scale(1.1);
 }
+
+.testimoni {
+  padding: 60px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+.testi-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.testi-card {
+  background: #1e1e1e;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
