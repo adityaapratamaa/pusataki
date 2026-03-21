@@ -2,16 +2,19 @@
 
 body{
   font-family:sans-serif;
-  background:#000;
+  background:radial-gradient(circle,#020617,#000);
   color:#fff;
   padding-top:70px;
 }
+
+img{max-width:100%}
 
 .container{max-width:1100px;margin:auto;padding:20px}
 
 .navbar{
   position:fixed;top:0;width:100%;
-  background:#000;padding:10px;
+  background:rgba(0,0,0,.8);
+  backdrop-filter:blur(10px);
 }
 
 .nav-inner{display:flex;justify-content:space-between}
@@ -22,23 +25,31 @@ body{
   background:url('https://images.unsplash.com/photo-1580273916550-e323be2ae537') center/cover;
 }
 
-.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.7)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,#000,transparent)}
 
 .hero-left{position:relative;z-index:2}
 
 .btn-red{
-  background:red;padding:10px;color:#fff;
-  text-decoration:none;display:inline-block;margin-top:10px
+  background:#ef4444;
+  padding:12px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  color:#fff;
 }
-
-.section{padding:80px 0;text-align:center}
 
 .services-grid,.produk-grid{
   display:grid;grid-template-columns:repeat(2,1fr);gap:20px
 }
 
 .service-card,.produk-card,.testi-card{
-  padding:20px;background:#111;border-radius:10px
+  background:rgba(255,255,255,.05);
+  backdrop-filter:blur(10px);
+  padding:20px;border-radius:12px;
+  transition:.3s;
+}
+
+.service-card:hover,.produk-card:hover,.testi-card:hover{
+  transform:translateY(-8px)
 }
 
 .contact-grid{
@@ -49,5 +60,11 @@ body{
 
 .wa{
   position:fixed;bottom:20px;right:20px;
-  background:green;padding:10px;border-radius:50%
+  background:#25d366;padding:15px;border-radius:50%
+}
+
+@media(max-width:768px){
+  .services-grid,.produk-grid,.contact-grid{
+    grid-template-columns:1fr
+  }
 }

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Ganti Aki Mobil Jakarta 24 Jam | Panggilan Cepat</title>
-  <meta name="description" content="Jasa ganti aki mobil panggilan 24 jam Jakarta. Respon cepat, teknisi profesional.">
+  <meta name="description" content="Jasa ganti aki mobil panggilan 24 jam Jakarta. Respon cepat 5–10 menit.">
 
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/744/744465.png">
   <link rel="stylesheet" href="style.css">
@@ -22,7 +22,7 @@
 <nav class="navbar">
   <div class="container nav-inner">
     <div class="logo">AKI MOBIL 24 JAM</div>
-    <a href="https://wa.me/62895635754671?text=Halo%20saya%20butuh%20aki" class="nav-btn">Hubungi</a>
+    <a href="https://wa.me/62895635754671?text=Halo%20butuh%20aki" class="nav-btn">WhatsApp</a>
   </div>
 </nav>
 
@@ -33,7 +33,7 @@
     <div class="hero-left" data-aos="fade-right">
       <div class="hero-badge">🚗 Teknisi 24 Jam</div>
       <h1>Ganti Aki Mobil Panggilan</h1>
-      <p>Respon cepat 5–10 menit langsung ke lokasi</p>
+      <p>Respon cepat langsung ke lokasi</p>
       <a href="https://wa.me/62895635754671" class="btn-red">Pesan Sekarang</a>
     </div>
   </div>
@@ -47,7 +47,7 @@
     <div class="swiper mySwiper" data-aos="fade-up">
       <div class="swiper-wrapper">
 
-        <div class="swiper-slide"><div class="testi-card">⭐⭐⭐⭐⭐ Pelayanan cepat!</div></div>
+        <div class="swiper-slide"><div class="testi-card">⭐⭐⭐⭐⭐ Pelayanan cepat banget!</div></div>
         <div class="swiper-slide"><div class="testi-card">⭐⭐⭐⭐⭐ Harga transparan</div></div>
         <div class="swiper-slide"><div class="testi-card">⭐⭐⭐⭐⭐ Recommended!</div></div>
 
@@ -64,7 +64,7 @@
     </div>
     <div data-aos="fade-left">
       <h2>Tentang Kami</h2>
-      <p>Layanan aki 24 jam profesional.</p>
+      <p>Layanan profesional 24 jam.</p>
       <a href="#" class="btn-red">Hubungi</a>
     </div>
   </div>
@@ -72,41 +72,38 @@
 
 <section class="services">
   <div class="container">
-    <h2>Layanan</h2>
-    <div class="services-grid">
+    <h2 data-aos="fade-up">Layanan</h2>
 
+    <div class="services-grid" data-aos="zoom-in">
       <div class="service-card">🔋 Ganti Aki</div>
       <div class="service-card">⚡ Darurat</div>
       <div class="service-card">🚗 Antar</div>
       <div class="service-card">🛠️ Cek Gratis</div>
-
     </div>
   </div>
 </section>
 
 <section class="produk">
   <div class="container">
-    <h2>Produk</h2>
-    <div class="produk-grid">
+    <h2 data-aos="fade-up">Produk</h2>
 
+    <div class="produk-grid" data-aos="fade-up">
       <div class="produk-card">
         <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c6" loading="lazy">
         <h3>GS Astra</h3>
         <p class="price">Rp 900.000</p>
       </div>
-
       <div class="produk-card">
         <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c6" loading="lazy">
         <h3>Yuasa</h3>
         <p class="price">Rp 1.200.000</p>
       </div>
-
     </div>
   </div>
 </section>
 
 <section class="contact">
-  <div class="container contact-grid">
+  <div class="container contact-grid" data-aos="fade-up">
     <iframe src="https://maps.google.com/maps?q=Jakarta&t=&z=13&output=embed"></iframe>
     <div>
       <h2>Kontak</h2>
@@ -125,12 +122,16 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-AOS.init();
+AOS.init({duration:800, once:true});
 
 new Swiper(".mySwiper", {
   loop:true,
-  autoplay:{delay:2000},
-  slidesPerView:1
+  autoplay:{delay:2500},
+  slidesPerView:1,
+  breakpoints:{
+    768:{slidesPerView:2},
+    1024:{slidesPerView:3}
+  }
 });
 </script>
 
