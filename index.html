@@ -13,15 +13,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div style="height:60px;"></div>
 
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">AKI MOBIL 24 JAM</div>
-
-  <a href="https://wa.me/62895635754671" class="nav-btn">
-    💬 WhatsApp
-  </a>
-</nav>  
+  <a href="https://wa.me/62895635754671" class="nav-btn">WhatsApp</a>
+</nav>
 
 <!-- HERO -->
 <section class="hero">
@@ -29,128 +26,54 @@
 
   <div class="hero-content">
     <h1>Ganti Aki Mobil Panggilan 24 Jam</h1>
-    <p>Teknisi siap datang 5-10 menit ke lokasi kamu</p>
+    <p>Teknisi datang 5-10 menit ke lokasi kamu</p>
 
     <div class="cta">
-      <a href="https://wa.me/62895635754671" target="_blank" class="btn primary">
-        🚗 Pesan Sekarang
-      </a>
-
-      <a href="tel:0895635754671" class="btn secondary">
-        📞 Telepon
-      </a>
+      <a href="#" class="btn primary">Pesan Sekarang</a>
+      <a href="#" class="btn secondary">Telepon</a>
     </div>
 
     <div class="trust">
-      ⭐ 4.9 Rating | 100+ Customer | Garansi Resmi
+      ⭐ 4.9 Rating • 100+ Customer • Garansi Resmi
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="services">
+<section class="section">
   <h2>Layanan Kami</h2>
 
-  <div class="service-list">
-    <div class="card">
-      <h3>Ganti Aki</h3>
-      <p>Cepat & aman</p>
-    </div>
-
-    <div class="card">
-      <h3>Darurat Mogok</h3>
-      <p>24 jam standby</p>
-    </div>
-
-    <div class="card">
-      <h3>Datang ke Lokasi</h3>
-      <p>Tanpa ribet</p>
-    </div>
+  <div class="grid">
+    <div class="card">Ganti Aki</div>
+    <div class="card">Darurat Mogok</div>
+    <div class="card">Datang ke Lokasi</div>
   </div>
 </section>
 
 <!-- WHY -->
-<section class="why">
+<section class="section dark">
   <h2>Kenapa Pilih Kami?</h2>
 
-  <div class="why-list">
-    <div class="card">⚡ Respon 5-10 menit</div>
-    <div class="card">🔧 Teknisi berpengalaman</div>
-    <div class="card">💰 Harga transparan</div>
-    <div class="card">🛡️ Garansi resmi</div>
+  <div class="grid">
+    <div class="card">⚡ Respon Cepat</div>
+    <div class="card">🔧 Teknisi Ahli</div>
+    <div class="card">💰 Harga Jujur</div>
+    <div class="card">🛡️ Garansi</div>
   </div>
 </section>
 
 <!-- AREA -->
-<section class="area">
+<section class="section">
   <h2>Area Layanan</h2>
   <p>Jakarta, BSD, Tangerang, Bekasi, Depok</p>
 </section>
 
-<!-- BRAND -->
-<section class="brand">
-  <h2>Merek Aki</h2>
-
-  <div class="brand-list">
-    <span>GS Astra</span>
-    <span>Yuasa</span>
-    <span>Amaron</span>
-    <span>Incoe</span>
-  </div>
-</section>
-
-<!-- TESTIMONI -->
-<section class="testimoni">
-  <h2>Testimoni</h2>
-
-  <div class="testi-list">
-    <div class="testi-card">
-      "Cepat banget, mobil langsung nyala!" - Budi
-    </div>
-
-    <div class="testi-card">
-      "Tengah malam tetap dilayani" - Andi
-    </div>
-
-    <div class="testi-card">
-      "Harga jujur & teknisi ramah" - Rina
-    </div>
-  </div>
-</section>
-
 <!-- FLOAT WA -->
-<a href="https://wa.me/62895635754671?text=Saya%20butuh%20ganti%20aki%20mobil%20sekarang"
-   class="wa-float"
-   target="_blank">
-   💬
-</a>
+<a href="https://wa.me/62895635754671" class="wa">💬</a>
 
-<div id="popup" class="popup">
-  🔥 Andi dari Jakarta baru saja pesan ganti aki
-</div>
-
-<script>
-const names = ["Budi", "Andi", "Rina", "Dewi", "Agus"];
-const cities = ["Jakarta", "BSD", "Tangerang", "Bekasi"];
-
-setInterval(() => {
-  const name = names[Math.floor(Math.random()*names.length)];
-  const city = cities[Math.floor(Math.random()*cities.length)];
-
-  const popup = document.getElementById("popup");
-  popup.innerText = `🔥 ${name} dari ${city} baru saja pesan ganti aki`;
-  popup.style.display = "block";
-
-  setTimeout(() => {
-    popup.style.display = "none";
-  }, 4000);
-}, 8000);
-</script>
-
-<div class="sticky-cta">
-  <a href="https://wa.me/62895635754671">
-    🚗 Pesan Sekarang via WhatsApp
-  </a>
+<!-- STICKY CTA -->
+<div class="sticky">
+  <a href="#">Pesan Sekarang via WhatsApp</a>
 </div>
 
 </body>

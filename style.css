@@ -1,16 +1,15 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #020617, #0f172a);
+  font-family: Arial, sans-serif;
+  background: #020617;
   color: white;
 }
 
 /* NAVBAR */
 .navbar {
   position: fixed;
-  top: 0;
   width: 100%;
-  padding: 15px 30px;
+  padding: 12px 30px;
   display: flex;
   justify-content: space-between;
   background: rgba(0,0,0,0.6);
@@ -20,102 +19,82 @@ body {
 
 .logo {
   font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 1px;
 }
 
 .nav-btn {
-  background: linear-gradient(45deg, #22c55e, #16a34a);
-  padding: 8px 16px;
-  border-radius: 8px;
+  background: #22c55e;
+  padding: 8px 14px;
+  border-radius: 6px;
   text-decoration: none;
   color: white;
-  transition: 0.3s;
-}
-
-.nav-btn:hover {
-  transform: scale(1.05);
 }
 
 /* HERO */
 .hero {
   height: 100vh;
   background: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   position: relative;
-  padding-top: 80px;
 }
 
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.7), #020617);
+  background: rgba(0,0,0,0.7);
 }
 
 .hero-content {
   position: relative;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0 20px;
+  max-width: 700px;
+  padding: 20px;
 }
 
 .hero h1 {
   font-size: 42px;
-  font-weight: bold;
 }
 
 .hero p {
   opacity: 0.8;
 }
 
-/* CTA BUTTON */
+/* BUTTON */
 .btn {
-  padding: 14px 22px;
-  margin: 5px;
-  border-radius: 10px;
-  text-decoration: none;
   display: inline-block;
-  transition: 0.3s;
+  margin: 10px;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
-.btn.primary {
-  background: linear-gradient(45deg, #22c55e, #16a34a);
-  color: white;
-  box-shadow: 0 0 15px rgba(34,197,94,0.5);
+.primary {
+  background: #22c55e;
 }
 
-.btn.primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(34,197,94,0.8);
+.secondary {
+  border: 1px solid white;
 }
 
-.btn.secondary {
-  border: 1px solid rgba(255,255,255,0.3);
-  color: white;
-}
-
-.btn.secondary:hover {
-  background: rgba(255,255,255,0.1);
-}
-
-/* TRUST */
 .trust {
   margin-top: 15px;
   color: #facc15;
-  font-size: 14px;
 }
 
 /* SECTION */
-.services, .why, .brand, .testimoni {
-  padding: 60px 20px;
+.section {
+  padding: 70px 20px;
   text-align: center;
 }
 
-/* FLEX */
-.service-list,
-.why-list,
-.testi-list {
+.dark {
+  background: #020617;
+}
+
+/* GRID */
+.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -123,106 +102,34 @@ body {
   margin-top: 30px;
 }
 
-/* CARD PREMIUM */
-.card, .testi-card {
-  background: rgba(30,41,59,0.6);
-  backdrop-filter: blur(10px);
+.card {
+  background: #1e293b;
   padding: 25px;
-  border-radius: 15px;
-  width: 250px;
-  transition: 0.3s;
-  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px;
+  width: 220px;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
-/* AREA */
-.area {
-  padding: 50px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #020617, #020617);
-}
-
-/* BRAND */
-.brand-list span {
-  margin: 10px;
-  display: inline-block;
-  background: rgba(30,41,59,0.6);
-  padding: 10px 18px;
-  border-radius: 8px;
-}
-
-/* FLOAT WA */
-.wa-float {
+/* FLOAT */
+.wa {
   position: fixed;
   bottom: 90px;
   right: 20px;
   background: #25d366;
   padding: 15px;
   border-radius: 50%;
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  box-shadow: 0 0 15px rgba(37,211,102,0.7);
 }
 
-/* POPUP */
-.popup {
-  position: fixed;
-  bottom: 150px;
-  left: 20px;
-  background: rgba(30,41,59,0.9);
-  padding: 15px;
-  border-radius: 10px;
-  display: none;
-}
-
-/* STICKY CTA */
-.sticky-cta {
+/* STICKY */
+.sticky {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(45deg, #22c55e, #16a34a);
+  background: #22c55e;
   text-align: center;
   padding: 15px;
 }
 
-.sticky-cta a {
+.sticky a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-}
-
-/* SPACING FIX */
-body {
-  padding-bottom: 70px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .card, .testi-card {
-    width: 100%;
-  }
-}
-
-.hero-content {
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-50%);
-  }
 }
