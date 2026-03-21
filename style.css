@@ -813,40 +813,6 @@ h2:hover {
   }
 }
 
-.wa-popup {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: none;
-  z-index: 9999;
-}
-
-.wa-box {
-  background: #0f172a;
-  padding: 16px 20px;
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-  animation: fadeUp 0.5s ease;
-}
-
-.wa-box p {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.wa-box a {
-  background: #25d366;
-  padding: 10px 16px;
-  border-radius: 6px;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
-
-@keyframes fadeUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
 
 .sticky-wa {
   position: fixed;
