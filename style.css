@@ -147,6 +147,7 @@ body {
   background: #1e293b;
   padding: 25px;
   border-radius: 10px;
+  
 }
 
 /* FLOAT WA */
@@ -606,4 +607,12 @@ body {
 .btn-red,
 .nav-btn {
   cursor: pointer;
+}
+
+.swiper {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  height: auto;
 }
