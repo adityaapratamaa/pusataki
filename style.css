@@ -149,3 +149,48 @@ body {
   }
 
 }
+.hero-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.98) 25%,
+    rgba(0,0,0,0.75) 55%,
+    rgba(0,0,0,0.3)
+  );
+}
+
+/* TYPOGRAPHY UPGRADE */
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+/* TEXT */
+.hero p {
+  font-size: 16px;
+  color: #d1d5db;
+}
+
+/* BUTTON PREMIUM */
+.btn-red {
+  background: #ef4444;
+  padding: 16px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(239,68,68,0.3);
+  transition: 0.3s;
+}
+
+.btn-red:hover {
+  transform: translateY(-2px);
+  background: #dc2626;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: black;
+  padding: 6px 12px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
