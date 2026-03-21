@@ -961,3 +961,18 @@ h2:hover {
   }
 
 }
+
+.hero-left a {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.btn-wa-super {
+  padding: 16px 28px;
+  font-size: 16px;
+}
+
+.btn-wa-super {
+  margin-top: 25px;
+  display: inline-block;
+}
