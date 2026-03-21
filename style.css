@@ -100,3 +100,64 @@ body {
     text-align: center;
   }
 }
+
+/* ===== FIX HERO FINAL (OVERRIDE) ===== */
+
+.hero-grid {
+  grid-template-columns: 1fr 1fr !important;
+  align-items: center;
+}
+
+.hero-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-wa-super {
+  background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+  padding: 20px 40px !important;
+  border-radius: 999px !important;
+  font-weight: bold;
+  color: white !important;
+  text-decoration: none;
+  box-shadow: 0 20px 60px rgba(239,68,68,0.6);
+}
+
+.sticky-wa {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ef4444;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 999px;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width:768px){
+
+  .hero {
+    height: auto !important;
+    padding: 100px 20px !important;
+    text-align: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+
+  .btn-wa-super {
+    width: 100%;
+  }
+
+  .sticky-wa {
+    width: 90%;
+    text-align: center;
+  }
+
+}
