@@ -76,7 +76,7 @@ body {
 .hero-grid {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding-left: 40px;
 }
 
@@ -601,4 +601,9 @@ body {
     grid-template-columns: 1fr;
   }
 
+}
+
+.btn-red,
+.nav-btn {
+  cursor: pointer;
 }

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
   <!-- SEO -->
   <title>Ganti Aki Mobil Jakarta 24 Jam | Panggilan Cepat</title>
@@ -65,26 +66,39 @@
   <div class="wave-bg"></div>
 
   <div class="container">
-    <h2 data-aos="fade-up">Dipercaya Banyak Customer</h2>
+    <h2 data-aos="fade-up">Testimonial</h2>
 
-    <div class="testimonial-grid" data-aos="fade-up">
+    <!-- SWIPER -->
+    <div class="swiper mySwiper" data-aos="fade-up">
 
-      <div class="testi-card">
-        <p>"Pelayanan cepat banget, teknisi datang kurang dari 10 menit!"</p>
-        <span>⭐⭐⭐⭐⭐ - Budi</span>
-      </div>
+      <div class="swiper-wrapper">
 
-      <div class="testi-card">
-        <p>"Aki langsung diganti di tempat, harga transparan dan bergaransi."</p>
-        <span>⭐⭐⭐⭐⭐ - Andi</span>
-      </div>
+        <!-- ITEM -->
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <p>"Pelayanan cepat banget, teknisi datang kurang dari 10 menit!"</p>
+            <span>⭐⭐⭐⭐⭐ - Budi</span>
+          </div>
+        </div>
 
-      <div class="testi-card">
-        <p>"Recommended! Respon cepat dan profesional."</p>
-        <span>⭐⭐⭐⭐⭐ - Sinta</span>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <p>"Aki langsung diganti di tempat, harga transparan."</p>
+            <span>⭐⭐⭐⭐⭐ - Andi</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <p>"Recommended banget, respon cepat!"</p>
+            <span>⭐⭐⭐⭐⭐ - Sinta</span>
+          </div>
+        </div>
+
       </div>
 
     </div>
+
   </div>
 </section>
 
@@ -203,7 +217,7 @@
 
     <div class="map">
       <iframe 
-        src="https://maps.google.com/maps?q=Jakarta Selatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        src="https://maps.google.com/maps?q=Jakarta Selatan Selatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
         loading="lazy">
       </iframe>
     </div>
@@ -241,6 +255,24 @@
     duration: 800,
     once: true
   });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+new Swiper(".mySwiper", {
+  loop: true,
+  autoplay: {
+    delay: 2500
+  },
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  breakpoints: {
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }
+});
 </script>
 
 </body>
