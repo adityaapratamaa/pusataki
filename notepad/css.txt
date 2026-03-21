@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* HERO */
 .hero {
   height: 100vh;
   background: #111;
@@ -17,14 +16,11 @@ body {
   color: white;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
 }
 
-/* SERVICES */
 .services {
   padding: 50px;
   text-align: center;
-  background: #f5f5f5;
 }
 
 .service-list {
@@ -32,7 +28,6 @@ body {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
-  flex-wrap: wrap;
 }
 
 .card {
@@ -41,4 +36,24 @@ body {
   padding: 20px;
   width: 200px;
   border-radius: 10px;
+=======
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: #111;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.hero a {
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+>>>>>>> 4e6e7d85bf369f677ae3f1e78dac0c1d4c87f16f
 }
