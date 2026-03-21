@@ -14,6 +14,14 @@
 </head>
 <body>
 
+<nav class="navbar">
+  <div class="logo">AKI MOBIL 24 JAM</div>
+
+  <a href="https://wa.me/62895635754671" class="nav-btn">
+    💬 WhatsApp
+  </a>
+</nav>  
+
 <!-- HERO -->
 <section class="hero">
   <div class="overlay"></div>
@@ -115,6 +123,34 @@
    target="_blank">
    💬
 </a>
+
+<div id="popup" class="popup">
+  🔥 Andi dari Jakarta baru saja pesan ganti aki
+</div>
+
+<script>
+const names = ["Budi", "Andi", "Rina", "Dewi", "Agus"];
+const cities = ["Jakarta", "BSD", "Tangerang", "Bekasi"];
+
+setInterval(() => {
+  const name = names[Math.floor(Math.random()*names.length)];
+  const city = cities[Math.floor(Math.random()*cities.length)];
+
+  const popup = document.getElementById("popup");
+  popup.innerText = `🔥 ${name} dari ${city} baru saja pesan ganti aki`;
+  popup.style.display = "block";
+
+  setTimeout(() => {
+    popup.style.display = "none";
+  }, 4000);
+}, 8000);
+</script>
+
+<div class="sticky-cta">
+  <a href="https://wa.me/62895635754671">
+    🚗 Pesan Sekarang via WhatsApp
+  </a>
+</div>
 
 </body>
 </html>
