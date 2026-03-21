@@ -150,16 +150,6 @@ body {
   
 }
 
-/* FLOAT WA */
-.wa {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  padding: 15px;
-  border-radius: 50%;
-}
-
 /* MOBILE */
 @media (max-width:768px){
 
