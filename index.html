@@ -71,35 +71,67 @@
 </section>
 
 <!-- TESTIMONIAL -->
-<section class="testimonial">
+<section class="testimonial-v2">
 
   <div class="container">
-    <h2 data-aos="fade-up">Testimonial</h2>
 
-    <!-- SWIPER -->
-    <div class="swiper mySwiper" data-aos="fade-up">
+    <div class="testi-header">
+      <h2>TESTIMONIALS</h2>
+      <div class="stars">★★★★★</div>
+      <p>Berdasarkan 400+ Ulasan</p>
+      <span class="google">Google</span>
+    </div>
+
+    <div class="swiper testiSwiper">
 
       <div class="swiper-wrapper">
 
-        <!-- ITEM -->
+        <!-- CARD -->
         <div class="swiper-slide">
-          <div class="testi-card">
-            <p>"Pelayanan cepat banget, teknisi datang kurang dari 10 menit!"</p>
-            <span>⭐⭐⭐⭐⭐ - Budi</span>
+          <div class="testi-card-v2">
+            <div class="testi-top">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg">
+              <div>
+                <strong>Ado Mustaryado</strong>
+                <span>4 bulan yang lalu</span>
+              </div>
+            </div>
+
+            <div class="stars">★★★★★</div>
+
+            <p>Respon cepat dan penjual ramah</p>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testi-card">
-            <p>"Aki langsung diganti di tempat, harga transparan."</p>
-            <span>⭐⭐⭐⭐⭐ - Andi</span>
+          <div class="testi-card-v2">
+            <div class="testi-top">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg">
+              <div>
+                <strong>Hermawan Suganda</strong>
+                <span>4 bulan yang lalu</span>
+              </div>
+            </div>
+
+            <div class="stars">★★★★★</div>
+
+            <p>Cepat, tepat, harga pas</p>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testi-card">
-            <p>"Recommended banget, respon cepat!"</p>
-            <span>⭐⭐⭐⭐⭐ - Sinta</span>
+          <div class="testi-card-v2">
+            <div class="testi-top">
+              <img src="https://randomuser.me/api/portraits/men/55.jpg">
+              <div>
+                <strong>Rohim Abdul</strong>
+                <span>4 bulan yang lalu</span>
+              </div>
+            </div>
+
+            <div class="stars">★★★★★</div>
+
+            <p>Fast respon dan teknisi langsung datang</p>
           </div>
         </div>
 
@@ -108,6 +140,7 @@
     </div>
 
   </div>
+
 </section>
 
 <!-- ABOUT -->
@@ -266,13 +299,13 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-new Swiper(".mySwiper", {
+new Swiper(".testiSwiper", {
   loop: true,
   autoplay: {
     delay: 2500
   },
-  slidesPerView: 1,
   spaceBetween: 20,
+  slidesPerView: 1,
 
   breakpoints: {
     768: { slidesPerView: 2 },
