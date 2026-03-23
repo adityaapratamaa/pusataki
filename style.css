@@ -103,6 +103,7 @@ body {
 .testimonial-pro {
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .testiProSwiper {
@@ -152,6 +153,10 @@ body {
 
 .avatar1 { top: 20%; left: 5%; }
 .avatar2 { top: 30%; right: 5%; }
+.avatar3 {
+  bottom: 10%;
+  left: 10%;
+}
 
 /* ABOUT */
 .about-pro {
@@ -170,6 +175,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+}
+.about-pro img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .img3 {
