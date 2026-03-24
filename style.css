@@ -351,32 +351,44 @@ text-align: center;
 /* ===================== */
 .sticky-wa {
 position: fixed;
-bottom: 0;
-left: 0;
-width: 100%;
-animation: pulse 2s infinite;
+bottom: 15px;
+left: 50%;
+transform: translateX(-50%);
 
-background: linear-gradient(135deg, #ef4444, #dc2626);
+width: calc(100% - 32px);
+max-width: 500px;
+
+background: #ef4444;
 color: white;
 
-padding: 16px;
+padding: 12px 16px;
+
+border-radius: 10px;
 
 display: flex;
 justify-content: center;
 align-items: center;
 
-font-size: 16px;
+font-size: 14px;
 font-weight: 600;
 
 z-index: 999;
 
-box-shadow: 0 -5px 20px rgba(0,0,0,0.4);
+box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+
+transition: all 0.2s ease;
 }
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 rgba(239,68,68,0.4); }
-  50% { box-shadow: 0 0 20px rgba(239,68,68,0.6); }
-  100% { box-shadow: 0 0 0 rgba(239,68,68,0.4); }
+
+/* hover desktop */
+.sticky-wa:hover {
+transform: translateX(-50%) translateY(-2px);
 }
+
+/* klik */
+.sticky-wa:active {
+transform: translateX(-50%) scale(0.97);
+}
+
 /* ===================== */
 /* MOBILE */
 /* ===================== */
