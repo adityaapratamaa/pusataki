@@ -447,5 +447,59 @@ width: 100%;
 padding: 14px;
 font-size: 16px;
 }
+.produk-wrap {
+grid-template-columns: 1fr;
+}
 
+.produk-text h2 {
+font-size: 24px;
+}
+
+}
+
+
+/* ===================== /
+/ PRODUK (ANTERAKI STYLE) /
+/ ===================== */
+.produk {
+padding: 120px 0;
+}
+
+.produk-wrap {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: center;
+}
+
+.produk-img img {
+width: 100%;
+border-radius: 12px;
+}
+
+.produk-text h2 {
+font-size: 32px;
+margin-bottom: 15px;
+}
+
+.produk-text p {
+color: #ccc;
+margin-bottom: 15px;
+line-height: 1.6;
+}
+
+.produk-list {
+margin: 15px 0;
+padding-left: 0;
+}
+
+.produk-list li {
+margin-bottom: 8px;
+color: #ddd;
+list-style: none;
+}
+
+.produk-note {
+margin-top: 15px;
+font-weight: 500;
 }
