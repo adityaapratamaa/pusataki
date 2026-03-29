@@ -214,10 +214,9 @@ font-size: 14px;
 }
 
 .testi-head .google {
-  font-size: 32px;
-  font-weight: bold;
   background: linear-gradient(90deg,#4285F4,#EA4335,#FBBC05,#34A853);
   -webkit-background-clip: text;
+  background-clip: text; /* ⭐ TAMBAH INI */
   -webkit-text-fill-color: transparent;
 }
 
@@ -263,7 +262,7 @@ font-size: 14px;
   width: 30px;
   height: 4px;
   border-radius: 10px;
-  background: #fff;
+  background: #fff;   
   opacity: 1;
 }
 
