@@ -367,12 +367,14 @@ new Swiper(".testiSlider", {
   slidesPerView: 1.2,
   spaceBetween: 20,
 
-  speed: 3000,
+  speed: 800, // ⭐ jangan terlalu tinggi
 
   autoplay: {
-    delay: 0,
+    delay: 2500, // ⭐ WAJIB ADA JEDA
     disableOnInteraction: false,
   },
+
+  grabCursor: true, // ⭐ biar enak di drag
 
   pagination: {
     el: ".swiper-pagination",

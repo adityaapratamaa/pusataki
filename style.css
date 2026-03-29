@@ -276,9 +276,6 @@ font-size: 14px;
 .swiper-slide-active .testi-card {
   transform: scale(1.08);
 }
-.swiper-wrapper {
-  transition-timing-function: linear !important;
-}
 
 /* AVATAR */
 .avatar-wrap {
