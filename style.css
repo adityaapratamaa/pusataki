@@ -13,16 +13,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body, html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Segoe UI', sans-serif;
   background: radial-gradient(circle at top, #020617, #000);
   color: white;
   padding-top: 70px;
   padding-bottom: 110px;
+  overflow-x: hidden;
   line-height: 1.5;
 }
 
@@ -64,21 +61,21 @@ a {
 
 .nav-btn {
   background: #ef4444;
-  padding: 10px 14px;
+  padding: 10px 16px;
   border-radius: 6px;
-  font-size: 13px;
   color: white;
+  font-size: 14px;
 }
 
 /* ===================== */
 /* HERO */
 /* ===================== */
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   background: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537') center/cover no-repeat;
-  position: relative;
 }
 
 .hero-overlay {
@@ -97,7 +94,7 @@ a {
 }
 
 .hero h1 {
-  font-size: 52px;
+  font-size: 56px;
   margin-bottom: 20px;
 }
 
@@ -109,8 +106,9 @@ a {
   background: rgba(255,255,255,0.1);
   padding: 6px 10px;
   border-radius: 6px;
-  font-size: 12px;
   margin-bottom: 15px;
+  display: inline-block;
+  font-size: 12px;
 }
 
 .hero-trust {
@@ -133,7 +131,7 @@ a {
 }
 
 /* ===================== */
-/* SECTION GENERAL */
+/* SECTION */
 /* ===================== */
 section {
   padding: 100px 0;
@@ -156,6 +154,24 @@ section {
   background: rgba(255,255,255,0.05);
   padding: 20px;
   border-radius: 10px;
+}
+
+/* ===================== */
+/* TESTIMONIAL */
+/* ===================== */
+.testimonial-pro {
+  padding: 100px 0;
+}
+
+.testi-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testi-card-pro {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 12px;
 }
 
 /* ===================== */
@@ -281,7 +297,7 @@ section {
 }
 
 /* ===================== */
-/* MOBILE FIX */
+/* MOBILE */
 /* ===================== */
 @media (max-width:768px){
 
@@ -321,14 +337,14 @@ section {
     grid-column: span 1;
   }
 
-  /* 🔥 PRODUK FIX */
+  /* PRODUK */
   .produk-wrap {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
-  /* 🔥 PROBLEM FIX */
+  /* PROBLEM */
   .grid {
     grid-template-columns: 1fr;
   }
