@@ -360,16 +360,17 @@
 
 <script>
 new Swiper(".testiSlider", {
-  loop: false, // ⭐ matiin dulu biar stabil
+  loop: true,
   centeredSlides: true,
-  initialSlide: 1,
 
   slidesPerView: 1.2,
   spaceBetween: 20,
 
+  speed: 3000, // ⭐ ini bikin smooth (kunci utama)
+
   autoplay: {
-    delay: 2500,
-    disableOnInteraction: false
+    delay: 0, // ⭐ jalan terus tanpa jeda
+    disableOnInteraction: false,
   },
 
   pagination: {
