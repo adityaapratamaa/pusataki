@@ -380,5 +380,28 @@ new Swiper(".testiProSwiper", {
   💬 Chat Sekarang via WhatsApp
 </a>
 
+<script>
+const hero = document.querySelector('.hero');
+
+const images = [
+  'https://images.unsplash.com/photo-1503376780353-7e6692767b70',
+  'https://images.unsplash.com/photo-1493238792000-8113da705763',
+  'https://images.unsplash.com/photo-1542362567-b07e54358753'
+];
+
+let index = 0;
+
+function changeBackground() {
+  hero.style.backgroundImage = `url('${images[index]}')`;
+  index = (index + 1) % images.length;
+}
+
+// pertama kali load
+changeBackground();
+
+// ganti tiap 5 detik
+setInterval(changeBackground, 5000);
+</script>
+
 </body>
 </html>
