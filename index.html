@@ -72,81 +72,80 @@
 </section>
 
 <!-- TESTIMONIAL -->
-<section class="testimonial-pro">
+<section class="testi-advance">
 
   <div class="container">
 
     <!-- HEADER -->
-    <div class="testi-header">
+    <div class="testi-head">
       <h2>TESTIMONIALS</h2>
+      <div class="line"></div>
       <div class="stars">★★★★★</div>
-      <p>Berdasarkan 400+ Ulasan</p>
-      <span class="google">Google</span>
-    </div>
-
-    <!-- FLOATING AVATAR -->
-    <div class="floating-avatar avatar1">
-      <img src="https://randomuser.me/api/portraits/men/11.jpg">
-    </div>
-    <div class="floating-avatar avatar2">
-      <img src="https://randomuser.me/api/portraits/women/22.jpg">
-    </div>
-    <div class="floating-avatar avatar3">
-      <img src="https://randomuser.me/api/portraits/men/33.jpg">
+      <h3>Berdasarkan 400+ Ulasan</h3>
+      <div class="google">Google</div>
     </div>
 
     <!-- SLIDER -->
-    <div class="swiper testiProSwiper">
+    <div class="swiper testiSlider">
 
       <div class="swiper-wrapper">
 
+        <!-- ITEM -->
         <div class="swiper-slide">
-          <div class="testi-card-pro">
-            <div class="testi-top">
+          <div class="testi-card">
+            <div class="avatar-wrap">
               <img src="https://randomuser.me/api/portraits/men/32.jpg">
-              <div>
-                <strong>Ado Mustaryado</strong>
-                <span>4 bulan lalu</span>
-              </div>
+              <span class="g-badge">G</span>
             </div>
-            <div class="stars">★★★★★</div>
-            <p>Respon cepat dan penjual ramah</p>
+
+            <h4>Muhammad Awaludin</h4>
+            <span>4 bulan lalu</span>
+
+            <div class="stars gold">★★★★★</div>
+
+            <p>
+              Aki nya lengkap, harga terjangkau, mantap the best siap antar sampai depan pintu rumah, 10/10
+            </p>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testi-card-pro">
-            <div class="testi-top">
+          <div class="testi-card">
+            <div class="avatar-wrap">
               <img src="https://randomuser.me/api/portraits/men/45.jpg">
-              <div>
-                <strong>Hermawan Suganda</strong>
-                <span>4 bulan lalu</span>
-              </div>
+              <span class="g-badge">G</span>
             </div>
-            <div class="stars">★★★★★</div>
-            <p>Cepat, tepat, harga pas</p>
+
+            <h4>Hermawan Suganda</h4>
+            <span>4 bulan lalu</span>
+
+            <div class="stars gold">★★★★★</div>
+
+            <p>
+              Cepat, tepat, harga pas. Pelayanan sangat memuaskan!
+            </p>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testi-card-pro">
-            <div class="testi-top">
+          <div class="testi-card">
+            <div class="avatar-wrap">
               <img src="https://randomuser.me/api/portraits/men/55.jpg">
-              <div>
-                <strong>Rohim Abdul</strong>
-                <span>4 bulan lalu</span>
-              </div>
+              <span class="g-badge">G</span>
             </div>
-            <div class="stars">★★★★★</div>
-            <p>Teknisi cepat datang dan profesional</p>
+
+            <h4>Rohim Abdul</h4>
+            <span>4 bulan lalu</span>
+
+            <div class="stars gold">★★★★★</div>
+
+            <p>
+              Teknisi cepat datang dan profesional. Recommended banget!
+            </p>
           </div>
         </div>
 
       </div>
-
-      <!-- ARROW -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
 
     </div>
 
@@ -357,22 +356,24 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-new Swiper(".testiProSwiper", {
+new Swiper(".testiSlider", {
   loop: true,
-  autoplay: {
-    delay: 2500
-  },
+  centeredSlides: true,
+  slidesPerView: 1.2,
   spaceBetween: 20,
-  slidesPerView: 1,
 
-  navigation: {
-     nextEl: ".testiProSwiper .swiper-button-next",
-    prevEl: ".testiProSwiper .swiper-button-prev"
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
   },
 
   breakpoints: {
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 }
+    768: {
+      slidesPerView: 2.2
+    },
+    1024: {
+      slidesPerView: 3
+    }
   }
 });
 </script>

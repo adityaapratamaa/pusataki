@@ -23,7 +23,7 @@ background: radial-gradient(circle at top, #020617, #000);
 color: white;
 padding-top: 70px;
 line-height: 1.5;
-padding-bottom: 80px;
+padding-bottom: 100px;
 }
 
 /* ===================== */
@@ -85,8 +85,10 @@ font-size: 14px;
   display: flex;
   align-items: center;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   transition: background-image 1s ease-in-out, opacity 1s;
+  padding: 120px 0 80px;
 }
 
 .hero-overlay {
@@ -179,68 +181,126 @@ font-size: 14px;
 }
 
 /* ===================== */
-/* TESTIMONIAL */
+/* TESTI ADVANCE */
 /* ===================== */
-.testimonial-pro {
-padding: 120px 0;
-position: relative;
-overflow: hidden;
+
+.testi-advance {
+  padding: 100px 0;
+  background: #000;
+  text-align: center;
 }
 
-.testiProSwiper {
-position: relative;
-z-index: 2;
+/* HEADER */
+.testi-head h2 {
+  font-size: 22px;
 }
 
-.testi-header {
-text-align: center;
-margin-bottom: 50px;
+.testi-head .line {
+  width: 80px;
+  height: 3px;
+  background: #ef4444;
+  margin: 10px auto 20px;
 }
 
-.testi-header .stars {
-color: #facc15;
+.testi-head .stars {
+  color: #facc15;
+  font-size: 22px;
 }
 
-.testi-card-pro {
-background: rgba(255,255,255,0.08);
-padding: 20px;
-border-radius: 12px;
-transition: 0.3s;
+.testi-head h3 {
+  font-size: 28px;
+  margin: 10px 0;
 }
 
-.testi-card-pro:hover {
-transform: translateY(-5px);
+.testi-head .google {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(90deg,#4285F4,#EA4335,#FBBC05,#34A853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.testi-card-pro .testi-top {
-display: flex;
-gap: 10px;
-margin-bottom: 10px;
+/* SLIDER */
+.testiSlider {
+  margin-top: 60px;
+  padding-bottom: 40px;
 }
 
-.testi-card-pro .testi-top img {
-width: 50px;
-height: 50px;
-border-radius: 50%;
+/* CARD */
+.testi-card {
+  background: #fff;
+  color: #000;
+  border-radius: 18px;
+  padding: 25px 15px;
+  text-align: center;
+  max-width: 260px;
+  margin: auto;
+  position: relative;
+  transition: 0.4s;
 }
 
-/* FLOATING AVATAR */
-.floating-avatar {
-position: absolute;
-z-index: 1;
+/* SCALE EFFECT (INI YANG BIKIN MIRIP ANTARAKI) */
+.swiper-slide {
+  opacity: 0.4;
+  transform: scale(0.85);
+  transition: 0.4s;
 }
 
-.floating-avatar img {
-width: 60px;
-height: 60px;
-border-radius: 50%;
-object-fit: cover;
-opacity: 0.7;
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.swiper {
+  overflow: visible;
 }
 
-.avatar1 { top: 20%; left: 5%; }
-.avatar2 { top: 30%; right: 5%; }
-.avatar3 { bottom: 10%; left: 10%; }
+/* AVATAR */
+.avatar-wrap {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.avatar-wrap img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+/* GOOGLE BADGE */
+.g-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* TEXT */
+.testi-card h4 {
+  margin-top: 40px;
+}
+
+.testi-card span {
+  font-size: 13px;
+  color: #777;
+}
+
+.testi-card .gold {
+  color: #facc15;
+  margin: 10px 0;
+}
+
+.testi-card p {
+  font-size: 14px;
+  color: #333;
+}
+
 
 /* ===================== */
 /* ABOUT */
@@ -495,9 +555,9 @@ font-size: 24px;
 }
 
 
-/* ===================== /
-/ PRODUK (ANTERAKI STYLE FIX) /
-/ ===================== */
+/* ===================== */
+/* PRODUK (ANTERAKI STYLE FIX) */
+/* ===================== */
 
 .produk {
 padding: 100px 0;
@@ -582,7 +642,7 @@ font-weight: 500;
   font-size: 28px;
 }
 
-.grid {
+.problem-section .grid {
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(3,1fr);
@@ -637,3 +697,7 @@ font-weight: 500;
   color: #bbb;
   line-height: 1.5;
 }
+
+  .testi-head h3 {
+    font-size: 22px;
+  }
