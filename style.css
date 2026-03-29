@@ -420,8 +420,11 @@ padding-right: 16px;
 }
 
 .hero {
-min-height: auto;
-padding: 110px 16px 70px;
+  min-height: 100vh; /* bikin full layar */
+  padding: 120px 16px 80px;
+
+  background-size: cover;
+  background-position: center top; /* fokus ke atas biar ga kepotong mobil */
 }
 
 .hero-left {
