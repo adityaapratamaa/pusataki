@@ -34,6 +34,10 @@
 
 <!-- HERO -->
 <section class="hero">
+   <!-- 🔥 BACKGROUND LAYER -->
+  <div class="hero-bg active"></div>
+  <div class="hero-bg hidden"></div>
+
   <div class="hero-overlay"></div>
 
   <div class="container hero-grid">
@@ -422,7 +426,8 @@ new Swiper(".testiSlider", {
 </a>
 
 <script>
-const hero = document.querySelector('.hero');
+const bg1 = document.querySelectorAll('.hero-bg')[0];
+const bg2 = document.querySelectorAll('.hero-bg')[1];
 
 const images = [
   'https://images.unsplash.com/photo-1503376780353-7e6692767b70',
@@ -431,16 +436,37 @@ const images = [
 ];
 
 let index = 0;
+let active = 0;
+
+// ✅ FIX: set background awal (biar ga kedip)
+bg1.style.backgroundImage = `url('${images[0]}')`;
 
 function changeBackground() {
-  hero.style.backgroundImage = `url('${images[index]}')`;
   index = (index + 1) % images.length;
+  const nextImage = images[index];
+
+  if (active === 0) {
+    bg2.style.backgroundImage = `url('${nextImage}')`;
+    bg2.classList.remove('hidden');
+    bg2.classList.add('active');
+
+    bg1.classList.remove('active');
+    bg1.classList.add('hidden');
+
+    active = 1;
+  } else {
+    bg1.style.backgroundImage = `url('${nextImage}')`;
+    bg1.classList.remove('hidden');
+    bg1.classList.add('active');
+
+    bg2.classList.remove('active');
+    bg2.classList.add('hidden');
+
+    active = 0;
+  }
 }
 
-// pertama kali load
-changeBackground();
-
-// ganti tiap 5 detik
+// jalan tiap 5 detik
 setInterval(changeBackground, 5000);
 </script>
 

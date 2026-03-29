@@ -84,10 +84,6 @@ font-size: 14px;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  transition: background-image 1s ease-in-out, opacity 1s;
   padding: 120px 0 80px;
 }
 
@@ -99,14 +95,15 @@ to bottom,
 rgba(0,0,0,0.2),
 rgba(0,0,0,0.85)
 );
-z-index: 1;
+z-index: 2;
 }
 
 .hero-grid {
 display: grid;
 grid-template-columns: 1fr;
 width: 100%;
-z-index: 2;
+position: relative;
+z-index: 3;
 }
 
 .hero-left {
@@ -124,6 +121,28 @@ word-break: break-word;
 
 .hero p {
 max-width: 500px;
+}
+
+/* layer background */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 0;
+}
+
+/* layer aktif */
+.hero-bg.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* layer tidak aktif */
+.hero-bg.hidden {
+  opacity: 0;
 }
 
 .hero-badge {
