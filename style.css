@@ -593,89 +593,145 @@ font-size: 16px;
 
 /* CARD JADI LEBIH PREMIUM */
 .produk-card {
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  .produk-info {
-    padding: 24px 18px;
-    background: #fff;
-    margin-bottom: 20px;
-  }
-
-  .produk-info h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-
-  .produk-info li {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  /* IMAGE FULL WIDTH + POTONG MIRING */
-  .produk-image img {
-    height: 280px; /* dari 240 → 280 */
-    border-radius: 0;
-
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-  }
-
-  /* SPACING ANTARA */
-  .produk-aki {
-    padding: 60px 0;
-  }
-
+  grid-template-columns: 1fr;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-
-/* ===================== */
-/* PRODUK - FIX MOBILE PREMIUM */
-/* ===================== */
-
-/* checklist */
-.check {
-  color: #ef4444;
-  font-weight: bold;
-  margin-right: 6px;
+/* TEXT */
+.produk-info {
+  order: 1;
+  padding: 24px 20px;
+  background: rgba(0,0,0,0.02);
+  border-radius: 14px;
 }
 
-/* BUTTON BESAR */
-.btn-produk-big {
-  display: block;
-  width: 100%;
-  text-align: center;
-
-  background: #ef4444;
-  color: #fff;
-
-  padding: 16px;
-  margin-top: 20px;
-
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-
-  box-shadow: 0 8px 20px rgba(239,68,68,0.3);
-  transition: 0.3s;
-  position: relative;
-  z-index: 2;
+/* JUDUL */
+.produk-info h3 {
+  font-size: 20px;
+  line-height: 1.4;
 }
 
-.btn-produk-big:hover {
-  background: #dc2626;
-  transform: translateY(-2px);
+/* LIST */
+.produk-info li {
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-/* IMAGE LEBIH MIRIP ANTERAKI */
+/* NOTE */
+.produk-note {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* IMAGE FULL (INI KUNCI) */
+.produk-image {
+  order: 2;
+}
+
 .produk-image img {
   width: 100%;
-  height: 300px; /* FIX HEIGHT */
+  height: 220px;
   object-fit: cover;
-
-  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  border-radius: 16px;
+  margin-top: 10px;
 }
 
+/* BUTTON JADI LEBIH “WAJIB DIKLIK” */
+.btn-produk {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 12px;
+}
+.produk-info ul {
+  margin-bottom: 15px;
+}
+
+}
+
+
+/* ===================== */
+/* PRODUK ANTERAKI STYLE */
+/* ===================== */
+
+.produk-aki {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+/* CARD */
+.produk-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* TEXT */
+.produk-info {
+  padding: 30px;
+}
+.produk-note {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+.produk-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #111;
+  font-weight: 700;
+}
+
+/* LIST */
+.produk-info ul {
+  margin-bottom: 20px;
+}
+
+.produk-info li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+/* BUTTON */
+.btn-produk {
+  display: inline-block;
+  background: #ef4444;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-produk:hover {
+  background: #dc2626;
+}
+
+/* IMAGE */
+.produk-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* efek potongan mirip anteraki */
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
 
 /* CONTACT CLEAN */
 .contact {
