@@ -591,33 +591,60 @@ font-size: 16px;
     order: 2;
   }
 
- .produk-card {
-    grid-template-columns: 1fr;
-  }
-
-   .produk-image img {
-    height: 200px;
-    clip-path: none; /* biar ga aneh di mobile */
-  }
-
-  .produk-wrap {
-    grid-template-columns: 1fr;
-  }
-
-.produk-text h2 {
-font-size: 24px;
+/* CARD JADI LEBIH PREMIUM */
+.produk-card {
+  grid-template-columns: 1fr;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
+/* TEXT */
 .produk-info {
-    order: 1;
-    padding: 20px;
-  }
+  order: 1;
+  padding: 24px 20px;
+}
 
-  .btn-produk {
-    width: 100%;
-    text-align: center;
-  }
+/* JUDUL */
+.produk-info h3 {
+  font-size: 20px;
+  line-height: 1.4;
+}
 
+/* LIST */
+.produk-info li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* NOTE */
+.produk-note {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* IMAGE FULL (INI KUNCI) */
+.produk-image {
+  order: 2;
+}
+
+.produk-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  clip-path: none;
+  border-radius: 0 0 18px 18px;
+}
+
+/* BUTTON JADI LEBIH “WAJIB DIKLIK” */
+.btn-produk {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
 
 }
 
@@ -639,6 +666,7 @@ font-size: 24px;
   border-radius: 16px;
   overflow: hidden;
   align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 /* TEXT */
@@ -656,6 +684,7 @@ font-size: 24px;
   font-size: 18px;
   margin-bottom: 15px;
   color: #111;
+  font-weight: 700;
 }
 
 /* LIST */
@@ -668,6 +697,9 @@ font-size: 24px;
   color: #444;
   margin-bottom: 10px;
   list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
 }
 
 /* BUTTON */
