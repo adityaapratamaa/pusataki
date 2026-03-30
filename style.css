@@ -521,6 +521,11 @@ padding-left: 16px;
 padding-right: 16px;
 }
 
+.produk-img {
+  order: -1;
+}
+
+
 .hero {
 min-height: auto;
 padding: 110px 16px 70px;
@@ -570,9 +575,8 @@ padding: 14px;
 font-size: 16px;
 }
 .produk-wrap {
-grid-template-columns: 1fr;
-text-align: center;
-}
+    grid-template-columns: 1fr;
+  }
 
 .produk-text h2 {
 font-size: 24px;
@@ -594,6 +598,12 @@ font-size: 24px;
     font-size: 13px;
   }
 
+  .produk-img img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
 }
 
 
@@ -607,55 +617,60 @@ text-align: center;
 }
 
 .produk-wrap {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 40px;
-align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-/* IMAGE */
-.produk-img {
-display: flex;
-justify-content: center;
-}
 
-.produk-img img {
-width: 100%;
-max-width: 420px;
-border-radius: 12px;
+ .produk-img img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
 }
 
 /* TEXT */
 .produk-text {
-text-align: left;
+  background: rgba(255,255,255,0.03);
+  padding: 20px;
+  border-radius: 14px;
 }
 
-.produk-text h2 {
-font-size: 32px;
-margin-bottom: 15px;
+
+ .produk-text h2 {
+  font-size: 26px;
 }
+
 
 .produk-text p {
-color: #ccc;
-margin-bottom: 15px;
-line-height: 1.6;
+  font-size: 14px;
 }
 
-.produk-list {
-margin: 15px 0;
-padding-left: 0;
-}
+
+ /* LIST BIAR GA SUMPEK */
+  .produk-list {
+    margin-top: 10px;
+  }
+
 
 .produk-list li {
-margin-bottom: 8px;
-color: #ddd;
-list-style: none;
+  font-size: 13px;
 }
 
-.produk-note {
-margin-top: 15px;
-font-weight: 500;
+
+/* NOTE */
+  .produk-note {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+/* BUTTON FIX */
+  .produk-text .btn-red {
+  width: 100%;
+  text-align: center;
 }
+
 
 /* CONTACT CLEAN */
 .contact {
