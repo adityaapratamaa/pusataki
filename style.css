@@ -521,11 +521,6 @@ padding-left: 16px;
 padding-right: 16px;
 }
 
-.produk-img {
-  order: -1;
-}
-
-
 .hero {
 min-height: auto;
 padding: 110px 16px 70px;
@@ -574,13 +569,7 @@ width: 100%;
 padding: 14px;
 font-size: 16px;
 }
-.produk-wrap {
-    grid-template-columns: 1fr;
-  }
 
-.produk-text h2 {
-font-size: 24px;
-}
 
 .grid {
     grid-template-columns: 1fr;
@@ -598,79 +587,114 @@ font-size: 24px;
     font-size: 13px;
   }
 
-  .produk-img img {
-  height: 180px;
-  object-fit: cover;
-  border-radius: 14px;
+  .produk-image {
+    order: 2;
+  }
+
+ .produk-card {
+    grid-template-columns: 1fr;
+  }
+
+   .produk-image img {
+    height: 200px;
+    clip-path: none; /* biar ga aneh di mobile */
+  }
+
+  .produk-wrap {
+    grid-template-columns: 1fr;
+  }
+
+.produk-text h2 {
+font-size: 24px;
 }
+
+.produk-info {
+    order: 1;
+    padding: 20px;
+  }
+
+  .btn-produk {
+    width: 100%;
+    text-align: center;
+  }
+
 
 }
 
 
 /* ===================== */
-/* PRODUK (ANTERAKI STYLE FIX) */
+/* PRODUK ANTERAKI STYLE */
 /* ===================== */
 
-.produk {
-padding: 100px 0;
-text-align: center;
+.produk-aki {
+  padding: 80px 0;
+  background: #f5f5f5;
 }
 
-.produk-wrap {
+/* CARD */
+.produk-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
   align-items: center;
 }
 
-
- .produk-img img {
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  border-radius: 12px;
-}
-
 /* TEXT */
-.produk-text {
-  background: rgba(255,255,255,0.03);
-  padding: 20px;
-  border-radius: 14px;
+.produk-info {
+  padding: 30px;
 }
-
-
- .produk-text h2 {
-  font-size: 26px;
-}
-
-
-.produk-text p {
-  font-size: 14px;
-}
-
-
- /* LIST BIAR GA SUMPEK */
-  .produk-list {
-    margin-top: 10px;
-  }
-
-
-.produk-list li {
+.produk-note {
   font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
 }
 
 
-/* NOTE */
-  .produk-note {
-    font-size: 14px;
-    margin-top: 15px;
-  }
-/* BUTTON FIX */
-  .produk-text .btn-red {
+.produk-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+/* LIST */
+.produk-info ul {
+  margin-bottom: 20px;
+}
+
+.produk-info li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+/* BUTTON */
+.btn-produk {
+  display: inline-block;
+  background: #ef4444;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-produk:hover {
+  background: #dc2626;
+}
+
+/* IMAGE */
+.produk-image img {
   width: 100%;
-  text-align: center;
-}
+  height: 100%;
+  object-fit: cover;
 
+  /* efek potongan mirip anteraki */
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
 
 /* CONTACT CLEAN */
 .contact {
