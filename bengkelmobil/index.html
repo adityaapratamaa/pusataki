@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPrime Workshop | Bengkel Mobil Professional 10+ Tahun</title>
+  <meta name="description" content="Bengkel mobil terpercaya 10+ tahun. Service lengkap: tune-up, ganti oli, ban, AC, rem, dan lainnya. Teknisi berpengalaman, harga transparan.">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2554/2554942.png">
+
+  <!-- ===== FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ===== LIBRARIES ===== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- ===== MAIN CSS ===== -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================
+     SCROLL PROGRESS BAR
+============================ -->
+<div id="scroll-progress"></div>
+
+<!-- ============================
+     NAVBAR
+============================ -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <div class="logo">
+      <div class="logo-icon">🔧</div>
+      <div class="logo-text">
+        AutoPrime
+        <span>Workshop &amp; Service</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#services">Layanan</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#testi">Ulasan</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#contact" class="btn-outline">📍 Lokasi</a>
+      <a href="https://wa.me/6281234567890" class="btn-primary" target="_blank">💬 Hubungi Kami</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================
+     MOBILE MENU
+============================ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="toggleMenu()">🔧 Layanan</a>
+  <a href="#about"    onclick="toggleMenu()">👥 Tentang Kami</a>
+  <a href="#gallery"  onclick="toggleMenu()">📸 Galeri</a>
+  <a href="#testi"    onclick="toggleMenu()">⭐ Ulasan</a>
+  <a href="#faq"      onclick="toggleMenu()">❓ FAQ</a>
+  <a href="https://wa.me/6281234567890" target="_blank" class="btn-primary" style="justify-content:center;">
+    💬 Hubungi via WhatsApp
+  </a>
+</div>
+
+<!-- ============================
+     HERO
+============================ -->
+<section class="hero" id="home">
+
+  <!-- Background Slideshow (ubah URL di sini untuk ganti foto) -->
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="hero-slide"        style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="hero-slide"        style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="hero-slide"        style="background-image: url('https://images.unsplash.com/photo-1504222490345-c075b7b4dc1a?auto=format&fit=crop&w=1600&q=80')"></div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+
+    <!-- Kiri: Teks -->
+    <div class="hero-left" data-aos="fade-right">
+      <div class="hero-eyebrow">
+        <div class="hero-badge-pill">⚙️ Terpercaya Sejak 2014</div>
+      </div>
+      <h1>
+        Bengkel<br>
+        <em>Terbaik</em> &amp;<br>
+        <span class="outline">Terpercaya</span>
+      </h1>
+      <p class="hero-desc">
+        Lebih dari <strong style="color:#fff">10 tahun</strong> melayani perawatan kendaraan Anda
+        dengan standar teknisi profesional, peralatan modern, dan harga yang transparan.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20book%20servis" class="btn-primary" target="_blank">
+          💬 Book Servis Sekarang
+        </a>
+        <a href="#services" class="btn-outline">Lihat Layanan →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <div class="hero-stat-num" data-count="10"><span>+</span></div>
+          <div class="hero-stat-label">Tahun Berpengalaman</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num" data-count="5000"><span>+</span></div>
+          <div class="hero-stat-label">Pelanggan Puas</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num" data-count="20"><span>+</span></div>
+          <div class="hero-stat-label">Teknisi Ahli</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num" data-count="98"><span>%</span></div>
+          <div class="hero-stat-label">Tingkat Kepuasan</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kanan: Floating Card -->
+    <div class="hero-card" data-aos="fade-left">
+      <div class="hero-open-badge">
+        <div class="open-dot"></div>
+        <div class="open-text">Buka Sekarang — Senin–Sabtu 07:00–20:00</div>
+      </div>
+      <div class="hero-card-title">Layanan Tersedia</div>
+      <div class="hero-service-chips">
+        <div class="chip">🔧 Tune-Up</div>
+        <div class="chip">🛢️ Ganti Oli</div>
+        <div class="chip">🚗 Balancing Ban</div>
+        <div class="chip">❄️ Servis AC</div>
+        <div class="chip">🔩 Rem &amp; Kopling</div>
+        <div class="chip">⚡ Kelistrikan</div>
+        <div class="chip">🔍 Spooring</div>
+        <div class="chip">🛞 Ganti Ban</div>
+      </div>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20book%20servis" class="btn-primary" target="_blank">
+        📅 Jadwalkan Servis
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Navigasi Dots Slideshow -->
+  <div class="hero-nav-dots" id="heroDots">
+    <div class="hero-dot active" onclick="goSlide(0)"></div>
+    <div class="hero-dot"        onclick="goSlide(1)"></div>
+    <div class="hero-dot"        onclick="goSlide(2)"></div>
+    <div class="hero-dot"        onclick="goSlide(3)"></div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <span>↓</span>
+  </div>
+
+</section>
+
+<!-- ============================
+     BRAND MARQUEE
+============================ -->
+<div class="brand-strip">
+  <div class="brand-track">
+    <span class="brand-item">Toyota</span>      <span class="brand-dot">•</span>
+    <span class="brand-item">Honda</span>        <span class="brand-dot">•</span>
+    <span class="brand-item">Mitsubishi</span>   <span class="brand-dot">•</span>
+    <span class="brand-item">Daihatsu</span>     <span class="brand-dot">•</span>
+    <span class="brand-item">Suzuki</span>       <span class="brand-dot">•</span>
+    <span class="brand-item">Nissan</span>       <span class="brand-dot">•</span>
+    <span class="brand-item">BMW</span>          <span class="brand-dot">•</span>
+    <span class="brand-item">Mercedes-Benz</span><span class="brand-dot">•</span>
+    <span class="brand-item">Hyundai</span>      <span class="brand-dot">•</span>
+    <span class="brand-item">Kia</span>          <span class="brand-dot">•</span>
+    <span class="brand-item">Mazda</span>        <span class="brand-dot">•</span>
+    <span class="brand-item">Isuzu</span>        <span class="brand-dot">•</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="brand-item">Toyota</span>      <span class="brand-dot">•</span>
+    <span class="brand-item">Honda</span>        <span class="brand-dot">•</span>
+    <span class="brand-item">Mitsubishi</span>   <span class="brand-dot">•</span>
+    <span class="brand-item">Daihatsu</span>     <span class="brand-dot">•</span>
+    <span class="brand-item">Suzuki</span>       <span class="brand-dot">•</span>
+    <span class="brand-item">Nissan</span>       <span class="brand-dot">•</span>
+    <span class="brand-item">BMW</span>          <span class="brand-dot">•</span>
+    <span class="brand-item">Mercedes-Benz</span><span class="brand-dot">•</span>
+    <span class="brand-item">Hyundai</span>      <span class="brand-dot">•</span>
+    <span class="brand-item">Kia</span>          <span class="brand-dot">•</span>
+    <span class="brand-item">Mazda</span>        <span class="brand-dot">•</span>
+    <span class="brand-item">Isuzu</span>        <span class="brand-dot">•</span>
+  </div>
+</div>
+
+<!-- ============================
+     STATS
+============================ -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-block">
+        <div class="stat-icon">🏆</div>
+        <div class="stat-num" data-target="10"><span class="cnt">0</span><span class="plus">+</span></div>
+        <div class="stat-label">Tahun Pengalaman</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-icon">👥</div>
+        <div class="stat-num" data-target="5000"><span class="cnt">0</span><span class="plus">+</span></div>
+        <div class="stat-label">Pelanggan Puas</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-icon">⚙️</div>
+        <div class="stat-num" data-target="20"><span class="cnt">0</span><span class="plus">+</span></div>
+        <div class="stat-label">Teknisi Profesional</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-icon">⭐</div>
+        <div class="stat-num" data-target="4.9"><span class="cnt">0</span><span class="plus">/5</span></div>
+        <div class="stat-label">Rating Google</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     SERVICES
+============================ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <div class="label-tag">Layanan Kami</div>
+        <h2 class="section-title">Semua Kebutuhan<br><span class="highlight-orange">Kendaraan Anda</span></h2>
+      </div>
+      <div class="services-header-right">
+        <p style="color:var(--muted);font-size:14px;max-width:320px;line-height:1.7;">
+          Didukung peralatan diagnostic terbaru dan tim teknisi bersertifikat untuk semua merek mobil.
+        </p>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-icon-wrap">🔧</div>
+        <h3>Tune-Up &amp; Service Berkala</h3>
+        <p>Perawatan rutin lengkap termasuk pengecekan menyeluruh sistem mesin, filter, dan komponen vital kendaraan.</p>
+        <a href="https://wa.me/6281234567890" class="service-card-link">Pesan Sekarang →</a>
+      </div>
+      <div class="service-card featured" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-icon-wrap">🛢️</div>
+        <h3>Ganti Oli &amp; Filter</h3>
+        <p>Ganti oli mesin, oli transmisi, dan filter dengan produk original dan sintetis berkualitas tinggi pilihan Anda.</p>
+        <a href="https://wa.me/6281234567890" class="service-card-link">Pesan Sekarang →</a>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-icon-wrap">🛞</div>
+        <h3>Ban, Spooring &amp; Balancing</h3>
+        <p>Penjualan dan pemasangan ban berbagai merek, disertai layanan spooring dan balancing presisi tinggi.</p>
+        <a href="https://wa.me/6281234567890" class="service-card-link">Pesan Sekarang →</a>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-icon-wrap">❄️</div>
+        <h3>Servis &amp; Isi Freon AC</h3>
+        <p>Perbaikan, servis rutin, dan pengisian freon AC mobil agar kabin tetap sejuk dan nyaman sepanjang tahun.</p>
+        <a href="https://wa.me/6281234567890" class="service-card-link">Pesan Sekarang →</a>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-icon-wrap">🔩</div>
+        <h3>Rem, Kopling &amp; Suspensi</h3>
+        <p>Penggantian kampas rem, minyak rem, kopling, serta pemeriksaan dan perbaikan sistem suspensi secara menyeluruh.</p>
+        <a href="https://wa.me/6281234567890" class="service-card-link">Pesan Sekarang →</a>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-icon-wrap">⚡</div>
+        <h3>Kelistrikan &amp; Diagnosis</h3>
+        <p>Diagnostic ECU dengan scanner terbaru, perbaikan sistem kelistrikan, aki, alternator, dan starter kendaraan.</p>
+        <a href="https://wa.me/6281234567890" class="service-card-link">Pesan Sekarang →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     ABOUT
+============================ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-images" data-aos="fade-right">
+      <img class="about-img-main"
+        src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=800&q=80"
+        alt="Teknisi bengkel profesional" loading="lazy">
+      <img class="about-img-inset"
+        src="https://images.unsplash.com/photo-1597762117709-859f744b84c3?auto=format&fit=crop&w=400&q=80"
+        alt="Pekerjaan bengkel" loading="lazy">
+      <div class="about-badge">
+        <div class="about-badge-num">10+</div>
+        <div class="about-badge-text">Tahun Melayani</div>
+      </div>
+    </div>
+    <div class="about-text" data-aos="fade-left">
+      <div class="label-tag">Tentang Kami</div>
+      <h2 class="section-title">Bengkel Mobil<br><span class="highlight-orange">Profesional &amp;<br>Berpengalaman</span></h2>
+      <p>AutoPrime Workshop berdiri sejak 2014 dengan misi memberikan pelayanan bengkel berkualitas tinggi yang dapat diandalkan. Kami memahami bahwa kendaraan Anda adalah investasi berharga yang perlu dirawat dengan serius.</p>
+      <p>Dengan tim teknisi bersertifikat dan berpengalaman, kami siap menangani segala jenis perawatan dan perbaikan mobil dari semua merek — dari city car hingga SUV premium.</p>
+      <div class="about-features">
+        <div class="about-feature" data-aos="zoom-in" data-aos-delay="0">
+          <div class="about-feature-icon">🛡️</div>
+          <div><h4>Garansi Servis</h4><p>Garansi perbaikan hingga 3 bulan</p></div>
+        </div>
+        <div class="about-feature" data-aos="zoom-in" data-aos-delay="80">
+          <div class="about-feature-icon">🔬</div>
+          <div><h4>Peralatan Modern</h4><p>Diagnostic scanner terkini</p></div>
+        </div>
+        <div class="about-feature" data-aos="zoom-in" data-aos-delay="160">
+          <div class="about-feature-icon">💰</div>
+          <div><h4>Harga Transparan</h4><p>Estimasi biaya sebelum servis</p></div>
+        </div>
+        <div class="about-feature" data-aos="zoom-in" data-aos-delay="240">
+          <div class="about-feature-icon">🚗</div>
+          <div><h4>Semua Merek</h4><p>Toyota, Honda, BMW, dan lainnya</p></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-item">✅ Bengkel Resmi Terdaftar</div>
+        <div class="cert-item">🏅 ISO Certified</div>
+        <div class="cert-item">⭐ 4.9 Google Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     PROCESS
+============================ -->
+<section class="process">
+  <div class="container">
+    <div class="process-header" data-aos="fade-up">
+      <div class="label-tag" style="justify-content:center;">Cara Kerja</div>
+      <h2 class="section-title">Proses <span class="highlight-orange">Mudah &amp; Cepat</span></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step" data-aos="fade-up" data-aos-delay="0">
+        <div class="step-num-wrap"><div class="step-num">01</div></div>
+        <h3>Booking / Telpon</h3>
+        <p>Hubungi kami via WhatsApp atau telpon untuk membuat jadwal servis sesuai kenyamanan Anda.</p>
+      </div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+        <div class="step-num-wrap"><div class="step-num">02</div></div>
+        <h3>Cek &amp; Diagnosis</h3>
+        <p>Teknisi kami melakukan pemeriksaan menyeluruh dan memberikan estimasi biaya yang transparan.</p>
+      </div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+        <div class="step-num-wrap"><div class="step-num">03</div></div>
+        <h3>Proses Servis</h3>
+        <p>Pekerjaan dimulai setelah persetujuan Anda, dikerjakan oleh teknisi bersertifikat dengan SOP ketat.</p>
+      </div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+        <div class="step-num-wrap"><div class="step-num">04</div></div>
+        <h3>Selesai &amp; Garansi</h3>
+        <p>Kendaraan siap Anda ambil beserta laporan servis lengkap dan garansi perbaikan tertulis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     GALLERY
+============================ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="gallery-header" data-aos="fade-up">
+      <div class="label-tag" style="justify-content:center;">Galeri</div>
+      <h2 class="section-title">Fasilitas <span class="highlight-orange">Workshop Kami</span></h2>
+    </div>
+    <div class="gallery-grid" data-aos="fade-up">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80" alt="Workshop interior" loading="lazy">
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1599256872237-5dcc0fbe9668?auto=format&fit=crop&w=600&q=80" alt="Mechanic at work" loading="lazy">
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1642059868826-fbe84bda2f09?auto=format&fit=crop&w=600&q=80" alt="Car tools" loading="lazy">
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=600&q=80" alt="Wheel alignment" loading="lazy">
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1609429019995-8c40f49535a5?auto=format&fit=crop&w=600&q=80" alt="Engine check" loading="lazy">
+        <div class="gallery-overlay"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     TESTIMONIALS
+============================ -->
+<section class="testimonials" id="testi">
+  <div class="container">
+    <div class="testi-header" data-aos="fade-up">
+      <div class="label-tag" style="justify-content:center;">Ulasan Pelanggan</div>
+      <div class="testi-stars">★★★★★</div>
+      <h2 class="section-title">Kata Pelanggan<br><span class="highlight-orange">Kami</span></h2>
+      <p class="testi-meta">
+        Berdasarkan <strong>600+ ulasan</strong> di
+        <strong style="background:linear-gradient(90deg,#4285F4,#EA4335,#FBBC05,#34A853);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">Google</strong>
+      </p>
+    </div>
+    <div class="swiper testiSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="testi-author">
+              <img class="testi-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+              <div><div class="testi-name">Riko Prasetyo</div><div class="testi-date">3 minggu lalu</div></div>
+            </div>
+            <div class="testi-gold">★★★★★</div>
+            <p class="testi-text">Sudah langganan di sini lebih dari 3 tahun. Teknisi sangat profesional, harga jelas dan tidak ada biaya tersembunyi. Bengkel ini memang beda!</p>
+            <span class="testi-service-tag">Tune-Up &amp; Ganti Oli</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="testi-author">
+              <img class="testi-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+              <div><div class="testi-name">Sari Dewi</div><div class="testi-date">1 bulan lalu</div></div>
+            </div>
+            <div class="testi-gold">★★★★★</div>
+            <p class="testi-text">AC mobil saya sudah tidak dingin berbulan-bulan, setelah servis di sini langsung dingin maksimal! Pelayanan cepat dan penjelasan teknisi sangat mudah dipahami.</p>
+            <span class="testi-service-tag">Servis AC</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="testi-author">
+              <img class="testi-avatar" src="https://randomuser.me/api/portraits/men/55.jpg" alt="">
+              <div><div class="testi-name">Hendro Kusuma</div><div class="testi-date">2 bulan lalu</div></div>
+            </div>
+            <div class="testi-gold">★★★★★</div>
+            <p class="testi-text">Spooring dan balancing hasilnya sangat presisi, setir sudah tidak bergetar lagi. Fasilitasnya bersih dan nyaman sambil menunggu. Highly recommended!</p>
+            <span class="testi-service-tag">Spooring &amp; Balancing</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="testi-author">
+              <img class="testi-avatar" src="https://randomuser.me/api/portraits/men/71.jpg" alt="">
+              <div><div class="testi-name">Budi Santoso</div><div class="testi-date">2 bulan lalu</div></div>
+            </div>
+            <div class="testi-gold">★★★★★</div>
+            <p class="testi-text">Pertama kali bawa BMW ke sini, sempat ragu. Ternyata teknisinya sangat berpengalaman dan paham mobil Eropa. Hasil kerjanya memuaskan, bersih, dan rapi.</p>
+            <span class="testi-service-tag">Service BMW</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="testi-author">
+              <img class="testi-avatar" src="https://randomuser.me/api/portraits/women/62.jpg" alt="">
+              <div><div class="testi-name">Rina Kartika</div><div class="testi-date">3 bulan lalu</div></div>
+            </div>
+            <div class="testi-gold">★★★★★</div>
+            <p class="testi-text">Pelayanannya ramah banget, dijelasin dengan sabar kondisi mobil saya. Harga juga sangat masuk akal untuk kualitas sebagus ini. Pasti balik lagi!</p>
+            <span class="testi-service-tag">Ganti Rem</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination" style="position:relative;margin-top:36px;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     PACKAGES
+============================ -->
+<section class="packages" id="packages">
+  <div class="container">
+    <div class="packages-header" data-aos="fade-up">
+      <div class="label-tag" style="justify-content:center;">Paket Layanan</div>
+      <h2 class="section-title">Pilih Paket <span class="highlight-orange">Servis Anda</span></h2>
+      <p style="color:var(--muted);margin-top:12px;font-size:15px;">Semua paket termasuk garansi pekerjaan &amp; laporan servis digital</p>
+    </div>
+    <div class="packages-grid">
+      <div class="pkg-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="pkg-name">Paket Dasar</div>
+        <div class="pkg-title">Basic Care</div>
+        <div class="pkg-desc">Perawatan rutin untuk kendaraan harian Anda tetap prima dan efisien.</div>
+        <div class="pkg-divider"></div>
+        <ul class="pkg-list">
+          <li><span class="ck">✔</span> Ganti Oli Mesin</li>
+          <li><span class="ck">✔</span> Cek Filter Udara</li>
+          <li><span class="ck">✔</span> Cek Tekanan Ban</li>
+          <li><span class="ck">✔</span> Cek Aki &amp; Kelistrikan</li>
+          <li class="off"><span class="ck">✗</span> Tune-Up Lengkap</li>
+          <li class="off"><span class="ck">✗</span> Spooring &amp; Balancing</li>
+        </ul>
+        <a href="https://wa.me/6281234567890" class="btn-outline" style="width:100%;justify-content:center;">Pesan Paket Ini</a>
+      </div>
+      <div class="pkg-card popular" data-aos="fade-up" data-aos-delay="100">
+        <div class="popular-badge">⭐ PALING DIMINATI</div>
+        <div class="pkg-name">Paket Standar</div>
+        <div class="pkg-title">Complete Service</div>
+        <div class="pkg-desc">Paket servis menyeluruh untuk performa optimal dan keselamatan berkendara.</div>
+        <div class="pkg-divider"></div>
+        <ul class="pkg-list">
+          <li><span class="ck">✔</span> Semua Item Basic Care</li>
+          <li><span class="ck">✔</span> Tune-Up Lengkap</li>
+          <li><span class="ck">✔</span> Spooring &amp; Balancing</li>
+          <li><span class="ck">✔</span> Cek Rem &amp; Kopling</li>
+          <li><span class="ck">✔</span> Cek Suspensi</li>
+          <li><span class="ck">✔</span> Laporan Servis Digital</li>
+        </ul>
+        <a href="https://wa.me/6281234567890" class="btn-primary" style="width:100%;justify-content:center;">Pesan Paket Ini</a>
+      </div>
+      <div class="pkg-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="pkg-name">Paket Premium</div>
+        <div class="pkg-title">Full Premium</div>
+        <div class="pkg-desc">Layanan premium all-in-one untuk kendaraan kesayangan Anda termasuk sedan &amp; SUV mewah.</div>
+        <div class="pkg-divider"></div>
+        <ul class="pkg-list">
+          <li><span class="ck">✔</span> Semua Item Complete Service</li>
+          <li><span class="ck">✔</span> Servis AC &amp; Isi Freon</li>
+          <li><span class="ck">✔</span> Diagnosis ECU Scanner</li>
+          <li><span class="ck">✔</span> Pembersihan Throttle Body</li>
+          <li><span class="ck">✔</span> Prioritas Antrean</li>
+          <li><span class="ck">✔</span> Garansi 3 Bulan</li>
+        </ul>
+        <a href="https://wa.me/6281234567890" class="btn-outline" style="width:100%;justify-content:center;">Pesan Paket Ini</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     FAQ
+============================ -->
+<section class="faq" id="faq">
+  <div class="container faq-grid">
+    <div class="faq-left" data-aos="fade-right">
+      <div class="label-tag">FAQ</div>
+      <h2 class="section-title">Pertanyaan<br><span class="highlight-orange">Yang Sering<br>Ditanyakan</span></h2>
+      <p style="color:var(--muted);margin-top:20px;font-size:15px;line-height:1.7;">Tidak menemukan jawaban? Hubungi kami langsung.</p>
+      <div style="margin-top:28px;">
+        <a href="https://wa.me/6281234567890" class="btn-primary" target="_blank">💬 Tanya via WhatsApp</a>
+      </div>
+    </div>
+    <div class="faq-list" data-aos="fade-left">
+      <div class="faq-item open">
+        <div class="faq-q" onclick="toggleFaq(this)">Apakah perlu booking sebelum datang?<span class="faq-arrow">▲</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Booking sangat disarankan agar Anda tidak perlu menunggu lama. Namun kami juga menerima pelanggan tanpa booking, tergantung antrean. Booking bisa via WhatsApp atau telepon.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Berapa lama waktu pengerjaan servis?<span class="faq-arrow">▼</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Ganti oli dan servis ringan biasanya 30–60 menit. Tune-up lengkap sekitar 2–3 jam. Untuk perbaikan lebih kompleks, kami berikan estimasi waktu setelah diagnosis awal.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Apakah tersedia layanan antar-jemput kendaraan?<span class="faq-arrow">▼</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Ya, tersedia layanan antar-jemput dalam area tertentu dengan biaya tambahan. Hubungi kami untuk info area coverage dan biaya layanan.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Apakah ada garansi setelah servis?<span class="faq-arrow">▼</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Ya! Basic dan Complete Service mendapat garansi 1 bulan. Paket Premium mendapat garansi 3 bulan untuk suku cadang dan jasa pengerjaan.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Apakah bisa servis mobil Eropa di sini?<span class="faq-arrow">▼</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Tentu! Tim kami berpengalaman menangani BMW, Mercedes-Benz, Audi, dan Volkswagen. Kami memiliki alat diagnostic khusus kendaraan Eropa.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     CONTACT / CTA
+============================ -->
+<section class="contact-cta" id="contact">
+  <div class="container">
+    <div class="contact-cta-inner" data-aos="zoom-in">
+      <div>
+        <div class="label-tag">Hubungi Kami</div>
+        <h2 class="section-title">Siap Merawat<br><span class="highlight-orange">Kendaraan Anda?</span></h2>
+        <p class="cta-sub">Jangan tunggu hingga ada masalah serius. Jadwalkan servis rutin sekarang dan dapatkan estimasi biaya gratis dari teknisi kami.</p>
+        <div class="contact-info-row">
+          <div class="contact-info-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div style="font-weight:600;font-size:13px;">Alamat</div>
+              <div style="color:var(--muted);font-size:13px;">Jl. Raya Serpong No. 88, Tangerang Selatan</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div style="font-weight:600;font-size:13px;">Telepon / WA</div>
+              <div style="color:var(--muted);font-size:13px;">0812-3456-7890</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">🕒</div>
+            <div>
+              <div style="font-weight:600;font-size:13px;">Jam Operasional</div>
+              <div style="color:var(--muted);font-size:13px;">Senin–Sabtu: 07:00 – 20:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20booking%20servis" class="btn-primary" target="_blank" style="white-space:nowrap;">💬 WhatsApp Sekarang</a>
+        <a href="tel:081234567890" class="btn-outline" style="white-space:nowrap;">📞 Hubungi Lewat Telepon</a>
+        <p style="font-size:12px;color:var(--muted);text-align:center;">Respon dalam 5 menit</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     FOOTER
+============================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">🔧</div>
+          <div class="logo-text">AutoPrime<span>Workshop &amp; Service</span></div>
+        </div>
+        <p>Bengkel mobil terpercaya dengan pengalaman lebih dari 10 tahun. Teknisi profesional, harga transparan, dan garansi pekerjaan untuk semua kendaraan Anda.</p>
+        <div class="footer-socials">
+          <a class="social-btn" href="#" title="Instagram">📸</a>
+          <a class="social-btn" href="#" title="Facebook">📘</a>
+          <a class="social-btn" href="https://wa.me/6281234567890" title="WhatsApp" target="_blank">💬</a>
+          <a class="social-btn" href="#" title="TikTok">🎵</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Layanan</h5>
+        <ul>
+          <li><a href="#">Tune-Up &amp; Service Berkala</a></li>
+          <li><a href="#">Ganti Oli &amp; Filter</a></li>
+          <li><a href="#">Ban, Spooring &amp; Balancing</a></li>
+          <li><a href="#">Servis AC</a></li>
+          <li><a href="#">Rem &amp; Kopling</a></li>
+          <li><a href="#">Kelistrikan &amp; Diagnosis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Informasi</h5>
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Paket Servis</a></li>
+          <li><a href="#">Promosi &amp; Promo</a></li>
+          <li><a href="#">Blog Otomotif</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Kontak</h5>
+        <ul>
+          <li><a href="#">📍 Jl. Raya Serpong No. 88</a></li>
+          <li><a href="#">📞 0812-3456-7890</a></li>
+          <li><a href="#">✉️ info@autoprime.id</a></li>
+          <li><a href="#">🕒 Senin–Sabtu 07:00–20:00</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AutoPrime Workshop. All rights reserved.</span>
+      <span>Design dengan ❤️ untuk bengkel terbaik</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================
+     STICKY WHATSAPP
+============================ -->
+<a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20booking%20servis" class="sticky-wa" target="_blank">
+  💬 Chat WhatsApp — Booking Servis Sekarang
+</a>
+
+<!-- ============================
+     SCRIPTS — LIBRARIES
+============================ -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- ============================
+     SCRIPTS — APP LOGIC
+============================ -->
+<script>
+
+  /* AOS */
+  AOS.init({ duration: 700, once: true, offset: 60 });
+
+  /* Navbar scrolled */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+    const prog = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = prog + '%';
+  });
+
+  /* Mobile menu */
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  /* Hero slideshow */
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots   = document.querySelectorAll('.hero-dot');
+  let currentSlide = 0;
+
+  function goSlide(idx) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = idx;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }
+
+  setInterval(() => goSlide((currentSlide + 1) % slides.length), 5000);
+
+  /* Stats counter (trigger on scroll) */
+  function animateCounters() {
+    document.querySelectorAll('.stat-num[data-target]').forEach(el => {
+      const target  = parseFloat(el.dataset.target);
+      const cntEl   = el.querySelector('.cnt');
+      const isFloat = target % 1 !== 0;
+      let start = 0;
+
+      const step = (ts) => {
+        if (!start) start = ts;
+        const p = Math.min((ts - start) / 1800, 1);
+        const v = target * (1 - Math.pow(1 - p, 3));
+        cntEl.textContent = isFloat ? v.toFixed(1) : Math.floor(v);
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+  }
+
+  let countersTriggered = false;
+  new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !countersTriggered) {
+      countersTriggered = true;
+      animateCounters();
+    }
+  }, { threshold: 0.3 }).observe(document.querySelector('.stats-section'));
+
+  /* Hero stat counters (on load) */
+  document.querySelectorAll('.hero-stat-num[data-count]').forEach(el => {
+    const target = parseInt(el.dataset.count);
+    const suffix = el.querySelector('span').textContent;
+    let start = 0;
+
+    const s = (ts) => {
+      if (!start) start = ts;
+      const p = Math.min((ts - start) / 1500, 1);
+      el.innerHTML = Math.floor(target * (1 - Math.pow(1 - p, 3))) + '<span>' + suffix + '</span>';
+      if (p < 1) requestAnimationFrame(s);
+    };
+    setTimeout(() => requestAnimationFrame(s), 500);
+  });
+
+  /* Swiper testimonials */
+  new Swiper('.testiSwiper', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    speed: 600,
+    autoplay: { delay: 3000, disableOnInteraction: false },
+    grabCursor: true,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    breakpoints: {
+      640:  { slidesPerView: 1.5 },
+      900:  { slidesPerView: 2.2 },
+      1100: { slidesPerView: 3 }
+    }
+  });
+
+  /* FAQ accordion */
+  function toggleFaq(el) {
+    const item   = el.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-arrow').textContent = '▼';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      el.querySelector('.faq-arrow').textContent = '▲';
+    }
+  }
+
+  /* Sticky WA show/hide */
+  const stickyWa = document.querySelector('.sticky-wa');
+  stickyWa.style.opacity       = '0';
+  stickyWa.style.pointerEvents = 'none';
+  stickyWa.style.transition    = 'opacity 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease';
+
+  window.addEventListener('scroll', () => {
+    const show = window.scrollY >= 200;
+    stickyWa.style.opacity       = show ? '1' : '0';
+    stickyWa.style.pointerEvents = show ? 'auto' : 'none';
+  }, { passive: true });
+
+  /* Chip hover micro-interaction */
+  document.querySelectorAll('.chip').forEach(c => {
+    c.addEventListener('mouseenter', () => c.style.transform = 'scale(1.05)');
+    c.addEventListener('mouseleave', () => c.style.transform = 'scale(1)');
+  });
+
+</script>
+</body>
+</html>
